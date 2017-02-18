@@ -1,0 +1,2 @@
+json.extract! voluntario, :id, :nome_completo, :data_nasc, :profissao, :email, :telefone, :endereco, :cidade, :cep, :estado, :empresa_trabalha, :voluntario, :area_atuacao, :created_at, :updated_at
+json.url voluntario_url(voluntario, format: :json)

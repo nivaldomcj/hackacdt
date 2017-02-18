@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome completo:</strong>
+  <%= @voluntario.nome_completo %>
+</p>
+
+<p>
+  <strong>Data nasc:</strong>
+  <%= @voluntario.data_nasc %>
+</p>
+
+<p>
+  <strong>Profissao:</strong>
+  <%= @voluntario.profissao %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @voluntario.email %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @voluntario.telefone %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @voluntario.endereco %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @voluntario.cidade %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @voluntario.cep %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @voluntario.estado %>
+</p>
+
+<p>
+  <strong>Empresa trabalha:</strong>
+  <%= @voluntario.empresa_trabalha %>
+</p>
+
+<p>
+  <strong>Voluntario:</strong>
+  <%= @voluntario.voluntario %>
+</p>
+
+<p>
+  <strong>Area atuacao:</strong>
+  <%= @voluntario.area_atuacao %>
+</p>
+
+<%= link_to 'Edit', edit_voluntario_path(@voluntario) %> |
+<%= link_to 'Back', voluntarios_path %>
