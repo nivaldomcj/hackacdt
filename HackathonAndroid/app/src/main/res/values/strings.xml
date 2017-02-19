@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">Colabore</string>
+
+    <string name="activity_login_title">Login</string>
+    <string name="edt_login">E-mail</string>
+    <string name="edt_senha">Senha</string>
+    <string name="btn_entrar">Acessar</string>
+    <string name="btn_cadastrar">Cadastrar-se</string>
+    <string name="activity_cadastrar_title">Novo cadastro</string>
+    <string name="edt_apelido">Apelido</string>
+    <string name="txt_aviso">Por favor, preencha os campos abaixo:</string>
+    <string name="edt_email">E-mail</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="text_ver_ongs">Ver ONG\'s</string>
+    <string name="text_minhas_estatisticas">Minhas Estatísticas</string>
+    <string name="text_ranking_geral">Ranking Geral</string>
+    <string name="text_empresas_parceiras">Empresas Parceiras</string>
+    <string name="toolbar_menu_principal">Menu principal</string>
+    <string name="txt_sair">Sair</string>
+    <string name="text_sobre">Sobre</string>
+    <string name="txt_username">username</string>
+    <string name="text_moedas">000 moeda(s)</string>
+    <string name="txt_resgatar">Resgatar código</string>
+    <string name="text_empresas_label">Empresas parceiras que apóiam o desenvolvimento do nosso aplicativo</string>
+</resources>

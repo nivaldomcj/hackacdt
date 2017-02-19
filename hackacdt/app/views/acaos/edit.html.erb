@@ -1,6 +1,8 @@
-<h1>Editing Acao</h1>
+<div class="container">
+<h2>Edição de Acão</h2>
 
 <%= render 'form', acao: @acao %>
 
-<%= link_to 'Show', @acao %> |
-<%= link_to 'Back', acaos_path %>
+<%= link_to 'Ver', @acao, :class=>"btn btn-default" %> |
+<%= link_to 'Voltar', acaos_path, :class=>"btn btn-default" %>
+</div>

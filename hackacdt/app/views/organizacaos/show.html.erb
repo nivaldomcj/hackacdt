@@ -1,3 +1,4 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -38,5 +39,5 @@
   <%= @organizacao.log %>
 </p>
 
-<%= link_to 'Edit', edit_organizacao_path(@organizacao) %> |
-<%= link_to 'Back', organizacaos_path %>
+<%= link_to 'Editar', edit_organizacao_path(@organizacao), :class=>"btn btn-default" %> |
+<%= link_to 'Voltar', organizacaos_path, :class=>"btn btn-default" %>

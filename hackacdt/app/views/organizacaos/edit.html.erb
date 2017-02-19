@@ -1,6 +1,9 @@
-<h1>Editing Organizacao</h1>
+<div class="container">
+<h2>Editar Organização</h2>
 
 <%= render 'form', organizacao: @organizacao %>
 
-<%= link_to 'Show', @organizacao %> |
-<%= link_to 'Back', organizacaos_path %>
+<%= link_to 'Ver', @organizacao,:class=>"btn btn-default" %> |
+<%= link_to 'Voltar', organizacaos_path, :class=>"btn btn-default" %>
+
+</div>

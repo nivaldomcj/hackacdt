@@ -1,22 +1,17 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
-<h1>Voluntarios</h1>
+<h2>Lista de Voluntários</h2>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Nome completo</th>
-      <th>Data nasc</th>
-      <th>Profissao</th>
+      <th>Nome</th>
+      <th>Idade</th>
       <th>Email</th>
-      <th>Telefone</th>
-      <th>Endereco</th>
+      <th>Endereço</th>
       <th>Cidade</th>
-      <th>Cep</th>
-      <th>Estado</th>
-      <th>Empresa trabalha</th>
-      <th>Voluntario</th>
-      <th>Area atuacao</th>
+      <th>Crédito</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,21 +19,15 @@
   <tbody>
     <% @voluntarios.each do |voluntario| %>
       <tr>
-        <td><%= voluntario.nome_completo %></td>
-        <td><%= voluntario.data_nasc %></td>
-        <td><%= voluntario.profissao %></td>
+        <td><%= voluntario.nome %></td>
+        <td><%= voluntario.idade %></td>
         <td><%= voluntario.email %></td>
-        <td><%= voluntario.telefone %></td>
         <td><%= voluntario.endereco %></td>
         <td><%= voluntario.cidade %></td>
-        <td><%= voluntario.cep %></td>
-        <td><%= voluntario.estado %></td>
-        <td><%= voluntario.empresa_trabalha %></td>
-        <td><%= voluntario.voluntario %></td>
-        <td><%= voluntario.area_atuacao %></td>
-        <td><%= link_to 'Show', voluntario %></td>
-        <td><%= link_to 'Edit', edit_voluntario_path(voluntario) %></td>
-        <td><%= link_to 'Destroy', voluntario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= voluntario.credito %></td>
+        <td><%= link_to 'Ver', voluntario %></td>
+        <td><%= link_to 'Editar', edit_voluntario_path(voluntario) %></td>
+        <td><%= link_to 'Excluir', voluntario, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -46,4 +35,6 @@
 
 <br>
 
-<%= link_to 'New Voluntario', new_voluntario_path %>
+<%= link_to 'Novo Voluntario', new_voluntario_path, :class=>"btn btn-default" %>
+
+</div>

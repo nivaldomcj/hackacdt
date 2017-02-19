@@ -1,8 +1,10 @@
+<div class="container">
+
 <p id="notice"><%= notice %></p>
 
-<h1>Organizacaos</h1>
+<h2>Lista de Organizações</h2>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Nome</th>
@@ -26,9 +28,9 @@
         <td><%= organizacao.estado %></td>
         <td><%= organizacao.lat %></td>
         <td><%= organizacao.log %></td>
-        <td><%= link_to 'Show', organizacao %></td>
-        <td><%= link_to 'Edit', edit_organizacao_path(organizacao) %></td>
-        <td><%= link_to 'Destroy', organizacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', organizacao %></td>
+        <td><%= link_to 'Editar', edit_organizacao_path(organizacao) %></td>
+        <td><%= link_to 'Excluir', organizacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +38,5 @@
 
 <br>
 
-<%= link_to 'New Organizacao', new_organizacao_path %>
+<%= link_to 'Nova Organização', new_organizacao_path, :class=>"btn btn-default" %>
+</div>

@@ -1,6 +1,10 @@
-<h1>Editing Voluntario</h1>
+<div class="container">
+
+<h2>Editar Voluntário</h2>
 
 <%= render 'form', voluntario: @voluntario %>
 
-<%= link_to 'Show', @voluntario %> |
-<%= link_to 'Back', voluntarios_path %>
+<%= link_to 'Ver', @voluntario, :class=>"btn btn-default" %> |
+<%= link_to 'Voltar', voluntarios_path, :class=>"btn btn-default"%>
+
+</div>

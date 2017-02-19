@@ -1,3 +1,5 @@
+<div class="container">
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -25,5 +27,7 @@
   <%= @parceiro.estado %>
 </p>
 
-<%= link_to 'Edit', edit_parceiro_path(@parceiro) %> |
-<%= link_to 'Back', parceiros_path %>
+<%= link_to 'Editar', edit_parceiro_path(@parceiro), :class=>"btn btn-default" %> |
+<%= link_to 'Voltar', parceiros_path, :class=>"btn btn-default" %>
+
+</div>

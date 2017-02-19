@@ -1,3 +1,4 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -25,5 +26,6 @@
   <%= @acao.organizacao %>
 </p>
 
-<%= link_to 'Edit', edit_acao_path(@acao) %> |
-<%= link_to 'Back', acaos_path %>
+<%= link_to 'Editar', edit_acao_path(@acao), :class=>"btn btn-default" %> |
+<%= link_to 'Voltar', acaos_path, :class=>"btn btn-default" %>
+</div>

@@ -1,8 +1,9 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
-<h1>Parceiros</h1>
+<h2>Parceiros</h2>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Nome</th>
@@ -22,9 +23,9 @@
         <td><%= parceiro.cep %></td>
         <td><%= parceiro.cidade %></td>
         <td><%= parceiro.estado %></td>
-        <td><%= link_to 'Show', parceiro %></td>
-        <td><%= link_to 'Edit', edit_parceiro_path(parceiro) %></td>
-        <td><%= link_to 'Destroy', parceiro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', parceiro %></td>
+        <td><%= link_to 'Editar', edit_parceiro_path(parceiro) %></td>
+        <td><%= link_to 'Excluir', parceiro, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +33,6 @@
 
 <br>
 
-<%= link_to 'New Parceiro', new_parceiro_path %>
+<%= link_to 'Novo Parceiro', new_parceiro_path, :class=>"btn btn-default" %>
+
+</div>
