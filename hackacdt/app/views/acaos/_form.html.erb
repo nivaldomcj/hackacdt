@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :dt_inicio %>
-    <%= f.date_select :dt_inicio %>
+    <%= f.date_select :dt_inicio, :db => '%Y-%m-%d' %>
   </div>
 
   <div class="field">
@@ -34,6 +34,7 @@
   <div class="field">
     <%= f.label :organizacao_id %>
     <%= f.text_field :organizacao_id %>
+    
   </div>
 
   <div class="actions">

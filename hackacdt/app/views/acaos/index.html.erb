@@ -20,8 +20,8 @@
       <tr>
         <td><%= acao.nome %></td>
         <td><%= acao.descricao %></td>
-        <td><%= acao.dt_inicio %></td>
-        <td><%= acao.dt_fim %></td>
+        <td><%= acao.dt_inicio.strftime("%d/%m/%Y") %></td>
+        <td><%= acao.dt_fim.strftime("%d/%m/%Y") %></td>
         <td><%= acao.organizacao %></td>
         <td><%= link_to 'Ver', acao %></td>
         <td><%= link_to 'Editar', edit_acao_path(acao) %></td>
