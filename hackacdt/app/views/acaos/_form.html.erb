@@ -1,0 +1,42 @@
+<%= form_for(acao) do |f| %>
+  <% if acao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(acao.errors.count, "error") %> prohibited this acao from being saved:</h2>
+
+      <ul>
+      <% acao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descricao %>
+    <%= f.text_field :descricao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dt_inicio %>
+    <%= f.date_select :dt_inicio %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dt_fim %>
+    <%= f.date_select :dt_fim %>
+  </div>
+
+  <div class="field">
+    <%= f.label :organizacao_id %>
+    <%= f.text_field :organizacao_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

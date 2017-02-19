@@ -31,17 +31,17 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  username: postgres
-  #username: ykyzrxdheornqx
+  #username: postgres
+  username: ykyzrxdheornqx
 
   # The password associated with the postgres role (username).
-  password: postgres
-  #password: 4ea48e1da4dc38c60e0f8b264a9c36e47b032fb00d82bd94a590759dfef00ef6
+  #password: postgres
+  password: 4ea48e1da4dc38c60e0f8b264a9c36e47b032fb00d82bd94a590759dfef00ef6
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
+  host: localhost
   #host: ec2-54-163-234-140.compute-1.amazonaws.com
 
   # The TCP port the server listens on. Defaults to 5432.
@@ -63,7 +63,10 @@ development:
 test:
   <<: *default
   database: hackacdt_test
-
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.

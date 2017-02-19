@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @parceiro.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @parceiro.endereco %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @parceiro.cep %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @parceiro.cidade %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @parceiro.estado %>
+</p>
+
+<%= link_to 'Edit', edit_parceiro_path(@parceiro) %> |
+<%= link_to 'Back', parceiros_path %>

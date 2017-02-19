@@ -1,0 +1,55 @@
+<%= form_for(organizacao) do |f| %>
+  <% if organizacao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(organizacao.errors.count, "error") %> prohibited this organizacao from being saved:</h2>
+
+      <ul>
+      <% organizacao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :area_atuacao %>
+    <%= f.text_field :area_atuacao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :endereco %>
+    <%= f.text_field :endereco %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cep %>
+    <%= f.text_field :cep %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cidade %>
+    <%= f.text_field :cidade %>
+  </div>
+
+  <div class="field">
+    <%= f.label :estado %>
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %>
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :log %>
+    <%= f.text_field :log %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

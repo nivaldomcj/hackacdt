@@ -1,2 +1,3 @@
 class Voluntario < ApplicationRecord
+  
 end

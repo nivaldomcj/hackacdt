@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :acaos
+  resources :organizacaos
+  resources :parceiros
   root 'welcome#index'
 
   resources :voluntarios

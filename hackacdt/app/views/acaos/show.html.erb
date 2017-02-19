@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @acao.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @acao.descricao %>
+</p>
+
+<p>
+  <strong>Dt inicio:</strong>
+  <%= @acao.dt_inicio %>
+</p>
+
+<p>
+  <strong>Dt fim:</strong>
+  <%= @acao.dt_fim %>
+</p>
+
+<p>
+  <strong>Organizacao:</strong>
+  <%= @acao.organizacao %>
+</p>
+
+<%= link_to 'Edit', edit_acao_path(@acao) %> |
+<%= link_to 'Back', acaos_path %>

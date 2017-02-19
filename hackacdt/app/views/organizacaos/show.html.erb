@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @organizacao.nome %>
+</p>
+
+<p>
+  <strong>Area atuacao:</strong>
+  <%= @organizacao.area_atuacao %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @organizacao.endereco %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @organizacao.cep %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @organizacao.cidade %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @organizacao.estado %>
+</p>
+<p>
+  <strong>Latitude:</strong>
+  <%= @organizacao.lat %>
+</p>
+<p>
+  <strong>Longitude:</strong>
+  <%= @organizacao.log %>
+</p>
+
+<%= link_to 'Edit', edit_organizacao_path(@organizacao) %> |
+<%= link_to 'Back', organizacaos_path %>

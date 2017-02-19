@@ -1,6 +1,6 @@
 class VoluntariosController < ApplicationController
   before_action :set_voluntario, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /voluntarios
   # GET /voluntarios.json
   def index
@@ -69,6 +69,6 @@ class VoluntariosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def voluntario_params
-      params.require(:voluntario).permit(:nome_completo, :data_nasc, :profissao, :email, :telefone, :endereco, :cidade, :cep, :estado, :empresa_trabalha, :voluntario, :area_atuacao)
+      params.require(:voluntario).permit(:nome, :idade, :email, :endereco, :cidade, :credito)
     end
 end
